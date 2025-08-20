@@ -1,0 +1,190 @@
+@import url(./fonts.css);
+@import url(./variables.css);
+@import url(./mediaQuery.css);
+
+body {
+    /* margem interna */
+    padding: 0px;
+    /*margem externa */
+    margin: 0px;
+    border: 0px;
+    /* cor de fundo */
+    /* background-color: var(--cor-laranja-vermelho); */
+    font-family: var(--font-alerta);
+}
+
+form {
+    background-color: #aaaaaa;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+#topo {
+    background-color: #808080;
+    color: var(--cor-branco);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+
+}
+#container{
+    text-align: center;
+    font-family: var(--font-titulo);
+
+
+
+
+
+}
+
+.topo {
+    padding-right: 24px;
+    font-family: var(--font-titulo);
+    font-size: 26px;
+    padding: 26px 14px;
+    display: flex;
+    justify-content: end;
+}
+
+.imgLogotipo {
+    width: 225px;
+}
+
+
+
+.itemMenu {
+    list-style: none;
+}
+
+.linkMenu {
+    text-decoration: none;
+    color: var(--cor-branco);
+}
+
+.linkMenu:hover {
+    color: var(--cor-laranja-vermelho);
+    font-size: 28px;
+}
+
+.imgUser {
+    width: 320px;
+    border-radius: 50%;
+
+}
+
+.boxForm {
+    margin: 3rem;
+   
+}
+
+.formLogin{
+    height: 685px;
+    margin-bottom: 2rem;
+
+
+
+
+}
+
+.formLogin,
+.formCadastro {
+    text-align: center;
+    background-color: #aaaaaa;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    border-radius: 8px;
+    align-items: center;
+
+}
+
+/* .camplogin { 
+    height: 35px;
+    font-size: 1rem;
+}*/
+.camplogin,
+.campCadastro {
+    width: 100%;
+    height: 35px;
+    font-size: 1rem;
+    margin-bottom: 1.2rem;
+    outline: none;
+    border: none;
+    border-radius: 2.6px;
+
+
+}
+
+label {
+    font-family: var(--font-texto);
+    font-size: 1.4rem;
+}
+
+.btnLogin {
+    width: 150px;
+    height: 38px;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    background-color: var( --cor-azul);
+    color: var(--cor-branco);
+    cursor: pointer;
+
+}
+
+.btnLogin:hover {
+    background-color:var(--cor-azul-escuro);
+    width: 151px;
+    height: 39px;
+
+
+
+}
+.btnCadastrar{
+    width: 150px;
+    height: 38px;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    background-color: var(--cor-verde);
+    color: var(--cor-branco);
+    cursor: pointer;
+
+}.btnCadastrar:hover{
+     background-color: var(--cor-verde-escuro);
+    width: 151px;
+    height: 39px;
+
+}
+#end{
+    background-color: var(--cor-cinza-escuro);
+    color: var(--cor-branco);
+
+
+
+
+
+
+}
+.imgLogoTipoEnd{
+    width: 80px;
+    height: 80px;
+    border-radius: 6px;
+}
+.end{
+    padding: 3.4rem 0;
+    text-align: center;
+    font-size: 18px;
+    font-family: var(--font-texto);
+
+
+
+
+
+}
+

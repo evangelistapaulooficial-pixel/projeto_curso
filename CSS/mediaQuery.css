@@ -1,0 +1,89 @@
+@import url(./variables.css);
+
+/* arquivo com funções nativas de ajustes de tela (responsividade) */
+
+/* Resolução até 768px Medidas de Tela para celulares com alta resolução */
+/* Resolução acima de 768px Medidas de Tela para tablets e desktop */
+/* adaptar a tela para tablet e desk top */
+
+@media screen and (min-width: 768px) {
+    .layoutMenuDesktop {
+        text-align: right;
+        display: flex;
+        gap: 26px;
+    }
+    .layoutMenuMobile{
+        display: none;
+    }
+    .boxForm {
+    margin: 3rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 1.2rem;
+    align-items: center;
+}
+.end{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    justify-items: center;
+    padding: 3.4rem 0;
+    
+}
+}
+@media screen and (max-width:768px) {
+     .layoutMenuDesktop{
+         display: none;
+     }
+       .layoutMenuMobile{
+        text-align: center;
+        width: 100%;
+        left: -140%;
+        top: -30px;
+        padding: 4rem 0rem;
+        position: absolute;
+        background-color: var(--cor-laranja-vermelho);
+        color: var(--cor-branco);
+        transition: 0.3s;
+
+      }
+       .layoutMenuMobile.active{
+        left: 0;
+       }
+       .itemMenu{
+        margin: 1rem 0rem;
+       }
+       .linkMenuMobile{
+        text-decoration: none;
+        color: var(--cor-branco);
+
+       }
+       .bar{
+        display: block;
+        width: 28px;
+        height: 3px;
+        border-radius: 2px;
+        margin: 5px auto;
+        background-color: var(--cor-branco);
+        transition: all 0.3s ease-in-out;
+       }
+       .hamburguer{
+        cursor: pointer;
+        display: block;
+       }
+       .hamburguer.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+       }
+        .hamburguer.active .bar:nth-child(2){
+            opacity: 0;
+        }
+       
+          .hamburguer.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+       }
+         
+       
+
+
+    
+}

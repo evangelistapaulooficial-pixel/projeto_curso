@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./CSS/style.css">
+    <link rel="shortcut icon" href="images/logotipo_branco.png" type="image/x-icon">
+    <title>Página Inicial</title>
+</head>
+
+<body>
+    <!--TAG hader: Inicia a estrutura do conteudo da pagina web-->
+    <header id="topo">
+        <img src="images/logotipo_transparente.png" alt="Logotipo" title="Logotipo" class="imgLogotipo">
+        <section class="topo">
+            <!-- Lista não ordenada -->
+            <ul class="layoutMenuMobile">
+                <!-- Ítens da lista -->
+                <!-- Link do Facebook -->
+                <li class="itemMenu">
+                    <a href="#" target="_blank" class="linkMenuMobile">Facebook</a>
+                </li>
+
+                <!-- Link Instagram -->
+                <li class="itemMenu">
+                    <a href="#" target="_blank" class="linkMenuMobile">Instagram</a>
+                </li>
+
+                <!-- Link Youtube -->
+                <li class="itemMenu">
+                    <a href="#" target="_blank" class="linkMenuMobile">Youtube</a>
+                </li>
+            </ul>
+            <div class="hamburguer">
+                <span class="bar"></span>
+                  <span class="bar"></span>
+                    <span class="bar"></span>
+            </div>
+
+             <ul class="layoutMenuDesktop">
+                <!-- Ítens da lista -->
+                <!-- Link do Facebook -->
+                <li class="itemMenu">
+                    <a href="#" target="_blank" class="linkMenu">Facebook</a>
+                </li>
+
+                <!-- Link Instagram -->
+                <li class="itemMenu">
+                    <a href="#" target="_blank" class="linkMenu">Instagram</a>
+                </li>
+
+                <!-- Link Youtube -->
+                <li class="itemMenu">
+                    <a href="#" target="_blank" class="linkMenu">Youtube</a>
+                </li>
+            </ul>
+    </header>
+
+    <main id="container">
+        <h1>Formulario de Login: Faça seu cadastro</h1>
+        <h2>Caso não tenha uma conta, realize seu cadastro</h2>
+        
+        <section class="boxForm">
+
+            <div class="formLogin">
+                <form action="index.html" method="get" name="formLogin" onsubmit="return validarCamposLogin()"  >
+
+                    <img src="images/user.jpg" alt="Imagem do Usuario" class="imgUser">
+                    <label>Digite seu E-mail:</label>
+                    <input type="email"  name="email"   id="email" placeholder="Digite aqui..." class="camplogin">
+                    <label>Digite sua senha:</label>
+
+                    <input type="password" id="senha" placeholder="Digite aqui..." class="camplogin">
+                    <button class="btnLogin" name="btnLogin">Acessar</button>
+                </form>
+            </div>
+
+            <div class="formCadastro">
+                <form action="#" method="get" name="formCadastro" onsubmit="return validarCamposCadastro()"   >
+                    <label>Digite seu Nome Completo:</label>
+                    <input type="text" name="nome" id="nome" placeholder="Digite aqui..." class="campCadastro">
+
+                    <label>Digite seu E-mail:</label>
+                    <input type="email" name="email" id="email" placeholder="Digite aqui..." class="campCadastro">
+
+                    <label>Digite sua Data de Nascimento:</label>
+                    <input type="date" name="data" id="data" class="campCadastro">
+
+                    <label>Digite seu CPF:</label>
+                    <input type="number" name="cpf"   id="cpf" placeholder="Digite aqui..." class="campCadastro">
+
+                    <label>Digite seu Bairro:</label>
+                    <input type="text" name="bairro" id="bairro" placeholder="Digite aqui..." class="campCadastro">
+
+                    <label>Digite o Nome da Rua:</label>
+                    <input type="text" name="rua" id="rua" placeholder="Digite aqui..." class="campCadastro">
+
+                    <label>Digite seu CEP:</label>
+                    <input type="number" name="cep" id="cep" placeholder="Digite aqui..." class="campCadastro">
+
+                    <label>Digite um complemento:</label>
+                    <input type="text" name="complemento" id="complemento" placeholder="Digite aqui..." class="campCadastro">
+
+                    <label>Digite uma Senha:</label>
+                    <input type="password" name="senha" id="senha" placeholder="Digite aqui..." class="campCadastro">
+
+                    <label>Digite novamente sua senha:</label>
+                    <input type="password" name="repsenha" id="repsenha" placeholder="Digite aqui..." class="campCadastro">
+
+                    <button class="btnCadastrar" name="btnCadastrar">Cadastrar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer id="end">
+        <section class="end">
+            <p>copyright © 2025 - Todo os direitos reservados.</p>
+            <img src="images/logotipo_branco.png" alt="LogoTipo" title="LogoTipo" class="imgLogoTipoEnd">
+        </section>
+    </footer>
+    <script src="js/validar_campos.js"></script>
+     <script src="js/menu_mobile.js"></script>
+
+</body>
+
+</html>

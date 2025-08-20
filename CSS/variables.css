@@ -1,0 +1,26 @@
+:root {
+    --cor-preto: #000000;
+    --cor-branco: #ffffff;
+    --cor-cinza: #808080;
+    --cor-azul: #0000ff;
+    --cor-laranja: #ffa500;
+    --cor-laranja-vermelho: #ff4500;
+    --cor-tomate: #ff6347;
+    --cor-vermelho: #ff0000;
+    --cor-verde: #008000;
+    --cor-amarelo: #ffff00;
+    --cor-prata: #c0c0c0;
+    --cor-ciano: #00ffff;
+    --cor-verde-escuro: #006400;
+    --cor-cinza-escuro: #313131;
+    --cor-cinza-light: #aaaaaa;
+    --cor-azul-escuro: #00005e;
+
+    --font-titulo: Poppins-Medium;
+    --font-texto: Poppins-Regular;
+    --font-alerta: Poppins-Black;
+
+
+
+
+}
